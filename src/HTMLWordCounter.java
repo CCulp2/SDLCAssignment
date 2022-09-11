@@ -3,14 +3,14 @@ import java.util.ArrayList;
 
 public class HTMLWordCounter {
     public static void main(String[] args) {
-        final String DEFAULT_START_OF_SELECTION = "<div class=\"chapter\">";
+        final String DEFAULT_START_OF_SELECTION = "<h1>";
         final String DEFAULT_END_OF_SELECTION = "</div>";
         final File DEFAULT_FILE_TO_READ = new File("src/1065-h.htm");
 
         File inputFile = null;
         String startOfSelection = null;
         String endOfSelection = null;
-        ArrayList<String> arrayOfWords = new ArrayList<>();
+        ArrayList<String> arrayOfWords;
         WordCountMap wordCountMap = new WordCountMap();
 
 //        Weird bit here for future expansion / allowing file selection.
@@ -26,5 +26,6 @@ public class HTMLWordCounter {
         arrayOfWords = text.getText();
         wordCountMap.addListOfWords(arrayOfWords);
         wordCountMap.displayTop20();
+//        wordCountMap.displayTopX(1000);
     }
 }

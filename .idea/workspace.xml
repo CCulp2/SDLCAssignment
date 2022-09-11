@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Added StringSanitizer to remove html attributes and punctuation from individual lines of text.">
-      <change afterPath="$PROJECT_DIR$/src/TextSelection.java" afterDir="false" />
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="A couple of methods to help with selecting desired text and refactoring of the WordCountMap.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HTMLWordCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTMLWordCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StringSanitizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringSanitizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordCountMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordCountMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +52,20 @@
       <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="HTMLWordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HTMLWordCounter" />
+      <module name="CCulpSDLCAssignment" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HTMLWordCounter" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,7 +79,7 @@
       <workItem from="1662784332066" duration="2132000" />
       <workItem from="1662870970982" duration="4804000" />
       <workItem from="1662885005230" duration="1051000" />
-      <workItem from="1662917868786" duration="11618000" />
+      <workItem from="1662917868786" duration="17391000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init with default HTML file.">
       <created>1662873816104</created>
@@ -118,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662923879953</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="A couple of methods to help with selecting desired text and refactoring of the WordCountMap.">
+      <created>1662932850121</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662932850121</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,19 +194,20 @@
     <MESSAGE value="Added sorting for wordCount, stubbed display." />
     <MESSAGE value="Limited foreach loops on display methods." />
     <MESSAGE value="Added StringSanitizer to remove html attributes and punctuation from individual lines of text." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added StringSanitizer to remove html attributes and punctuation from individual lines of text." />
+    <MESSAGE value="A couple of methods to help with selecting desired text and refactoring of the WordCountMap." />
+    <option name="LAST_COMMIT_MESSAGE" value="A couple of methods to help with selecting desired text and refactoring of the WordCountMap." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/WordCountMap.java</url>
-          <line>30</line>
-          <properties class="WordCountMap" method="displayTop20">
+          <line>38</line>
+          <properties class="WordCountMap" method="displayTopX">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

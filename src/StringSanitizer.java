@@ -1,12 +1,14 @@
 public class StringSanitizer {
 
     public static String removeHTML(String lineOfFile ) {
-        String sanitizedLine = lineOfFile.replaceAll("<[^>]*>", "");
-        return sanitizedLine;
+        return lineOfFile.replaceAll("<[^>]*>", "");
+
     }
 
     public static String removePunctuation(String lineOfFile) {
-        String sanitizedLine = lineOfFile.replaceAll("\\p{Punct}", "");
+        // TODO: Add pattern matching for more entity codes besides just mdash
+        String sanitizedLine = lineOfFile.replaceAll("&mdash;", " ");
+        sanitizedLine = sanitizedLine.replaceAll("[^A-Za-z0-9\\s]", "");
         return sanitizedLine;
     }
 
