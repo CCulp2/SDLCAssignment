@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Added basic README.md with assignment description." />
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Moved README to correct location.">
+      <change afterPath="$PROJECT_DIR$/src/WordCountMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +46,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +62,7 @@
       <workItem from="1662589729376" duration="17000" />
       <workItem from="1662655686213" duration="761000" />
       <workItem from="1662784332066" duration="2132000" />
-      <workItem from="1662870970982" duration="2758000" />
+      <workItem from="1662870970982" duration="4693000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init with default HTML file.">
       <created>1662873816104</created>
@@ -70,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662874063830</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Moved README to correct location.">
+      <created>1662874372638</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662874372638</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,7 +96,39 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -90,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Init with default HTML file." />
     <MESSAGE value="Added basic README.md with assignment description." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added basic README.md with assignment description." />
+    <MESSAGE value="Moved README to correct location." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved README to correct location." />
   </component>
 </project>
