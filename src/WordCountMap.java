@@ -1,11 +1,14 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class WordCountMap {
     Map<String, Integer> wordCount;
+    LinkedHashMap<String, Integer> sortedWordCount;
 
     public WordCountMap() {
         wordCount = new HashMap<>();
+        sortedWordCount = new LinkedHashMap<>();
     }
 
 //    public addWord(): Check to see if word is in list. If it is, increment count. If not, add word and count 1.
@@ -21,11 +24,24 @@ public class WordCountMap {
     }
 //    public displayTop20: Display the top 20 words counted in descending order
     public void displayTop20() {
+        // TODO: Limit list to 20 values
+        LinkedHashMap<String, Integer> sorted = sortWordCountMap(wordCount, sortedWordCount);
+        for (Map.Entry<String, Integer> word : sorted.entrySet()) {
+            // TODO: Whatever neato print we want to do here
+        }
+
+    }
+
+//    public displayTopX: Displays number of values asked for
+    public void displayTopX(int numberToDisplay) {
+        // TODO: Limit list to x values
 
     }
 
 //    private sortWordCountMap(): Sort the word count map in descending order
-    private void sortWordCountMap() {
-
+    private LinkedHashMap<String, Integer> sortWordCountMap(Map<String, Integer> wordCount, LinkedHashMap<String, Integer> sortedWordCount) {
+        wordCount.entrySet().stream().sorted(Map.Entry.comparingByValue())
+                .forEachOrdered(x -> sortedWordCount.put(x.getKey(), x.getValue()));
+        return sortedWordCount;
     }
 }
