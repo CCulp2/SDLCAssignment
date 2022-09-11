@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Added sorting for wordCount, stubbed display.">
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Limited foreach loops on display methods.">
+      <change afterPath="$PROJECT_DIR$/src/StringSanitizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +64,7 @@
       <workItem from="1662784332066" duration="2132000" />
       <workItem from="1662870970982" duration="4804000" />
       <workItem from="1662885005230" duration="1051000" />
-      <workItem from="1662917868786" duration="988000" />
+      <workItem from="1662917868786" duration="3315000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init with default HTML file.">
       <created>1662873816104</created>
@@ -100,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662886017839</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Limited foreach loops on display methods.">
+      <created>1662919126128</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662919126128</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +163,7 @@
     <MESSAGE value="Moved README to correct location." />
     <MESSAGE value="Stubbed out WordCountMap with methods needed according to docs." />
     <MESSAGE value="Added sorting for wordCount, stubbed display." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added sorting for wordCount, stubbed display." />
+    <MESSAGE value="Limited foreach loops on display methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Limited foreach loops on display methods." />
   </component>
 </project>
