@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Limited foreach loops on display methods.">
-      <change afterPath="$PROJECT_DIR$/src/StringSanitizer.java" afterDir="false" />
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Added StringSanitizer to remove html attributes and punctuation from individual lines of text.">
+      <change afterPath="$PROJECT_DIR$/src/TextSelection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HTMLWordCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTMLWordCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringSanitizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringSanitizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordCountMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordCountMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +67,7 @@
       <workItem from="1662784332066" duration="2132000" />
       <workItem from="1662870970982" duration="4804000" />
       <workItem from="1662885005230" duration="1051000" />
-      <workItem from="1662917868786" duration="3315000" />
+      <workItem from="1662917868786" duration="11618000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init with default HTML file.">
       <created>1662873816104</created>
@@ -108,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662919126128</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added StringSanitizer to remove html attributes and punctuation from individual lines of text.">
+      <created>1662923879953</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662923879953</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +174,27 @@
     <MESSAGE value="Stubbed out WordCountMap with methods needed according to docs." />
     <MESSAGE value="Added sorting for wordCount, stubbed display." />
     <MESSAGE value="Limited foreach loops on display methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="Limited foreach loops on display methods." />
+    <MESSAGE value="Added StringSanitizer to remove html attributes and punctuation from individual lines of text." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added StringSanitizer to remove html attributes and punctuation from individual lines of text." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/WordCountMap.java</url>
+          <line>30</line>
+          <properties class="WordCountMap" method="displayTop20">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="wordCount" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

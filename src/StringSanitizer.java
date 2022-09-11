@@ -1,11 +1,11 @@
 public class StringSanitizer {
 
-    public String removeHTML(String lineOfFile ) {
+    public static String removeHTML(String lineOfFile ) {
         String sanitizedLine = lineOfFile.replaceAll("<[^>]*>", "");
         return sanitizedLine;
     }
 
-    public String removePunctuation(String lineOfFile) {
+    public static String removePunctuation(String lineOfFile) {
         String sanitizedLine = lineOfFile.replaceAll("\\p{Punct}", "");
         return sanitizedLine;
     }

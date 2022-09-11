@@ -1,14 +1,19 @@
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 public class WordCountMap {
-    Map<String, Integer> wordCount;
-    LinkedHashMap<String, Integer> sortedWordCount;
+    private Map<String, Integer> wordCount;
+    private LinkedHashMap<String, Integer> sortedWordCount;
 
     public WordCountMap() {
         wordCount = new HashMap<>();
         sortedWordCount = new LinkedHashMap<>();
+    }
+
+//    public AddListOfWords(): Input an arrayList of words to check.
+    public void addListOfWords(ArrayList<String> listOfWords) {
+        for (String word : listOfWords) {
+            addWord(word);
+        }
     }
 
 //    public addWord(): Check to see if word is in list. If it is, increment count. If not, add word and count 1.
@@ -17,7 +22,7 @@ public class WordCountMap {
 
         if (wordCount.containsKey(word)) {
             int count = wordCount.get(word);
-            wordCount.put(word, count + 1);
+            wordCount.put(word, (count+1));
         } else {
             wordCount.put(word, 1);
         }
@@ -26,7 +31,7 @@ public class WordCountMap {
     public void displayTop20() {
         LinkedHashMap<String, Integer> sorted = sortWordCountMap(wordCount, sortedWordCount);
         sorted.entrySet().stream().limit(20).forEach(w -> {
-            // TODO: Whatever neato print we want to do here
+            System.out.println(String.format("%-10s :%3s", w.getKey(), w.getValue()));
         });
     }
 
@@ -34,14 +39,14 @@ public class WordCountMap {
     public void displayTopX(int numberToDisplay) {
         LinkedHashMap<String, Integer> sorted = sortWordCountMap(wordCount, sortedWordCount);
         sorted.entrySet().stream().limit(numberToDisplay).forEach(w -> {
-            // TODO: Whatever neato print we want to do here.
+            System.out.println(String.format("%-15s :%2s", w.getKey(), w.getValue()));
         });
 
     }
 
 //    private sortWordCountMap(): Sort the word count map in descending order
     private LinkedHashMap<String, Integer> sortWordCountMap(Map<String, Integer> wordCount, LinkedHashMap<String, Integer> sortedWordCount) {
-        wordCount.entrySet().stream().sorted(Map.Entry.comparingByValue())
+        wordCount.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .forEachOrdered(x -> sortedWordCount.put(x.getKey(), x.getValue()));
         return sortedWordCount;
     }
