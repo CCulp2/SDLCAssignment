@@ -24,17 +24,18 @@ public class WordCountMap {
     }
 //    public displayTop20: Display the top 20 words counted in descending order
     public void displayTop20() {
-        // TODO: Limit list to 20 values
         LinkedHashMap<String, Integer> sorted = sortWordCountMap(wordCount, sortedWordCount);
-        for (Map.Entry<String, Integer> word : sorted.entrySet()) {
+        sorted.entrySet().stream().limit(20).forEach(w -> {
             // TODO: Whatever neato print we want to do here
-        }
-
+        });
     }
 
 //    public displayTopX: Displays number of values asked for
     public void displayTopX(int numberToDisplay) {
-        // TODO: Limit list to x values
+        LinkedHashMap<String, Integer> sorted = sortWordCountMap(wordCount, sortedWordCount);
+        sorted.entrySet().stream().limit(numberToDisplay).forEach(w -> {
+            // TODO: Whatever neato print we want to do here.
+        });
 
     }
 

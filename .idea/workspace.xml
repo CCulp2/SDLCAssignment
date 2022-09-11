@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Moved README to correct location.">
-      <change afterPath="$PROJECT_DIR$/src/WordCountMap.java" afterDir="false" />
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Added sorting for wordCount, stubbed display.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,9 @@
       <workItem from="1662589729376" duration="17000" />
       <workItem from="1662655686213" duration="761000" />
       <workItem from="1662784332066" duration="2132000" />
-      <workItem from="1662870970982" duration="4693000" />
+      <workItem from="1662870970982" duration="4804000" />
+      <workItem from="1662885005230" duration="1051000" />
+      <workItem from="1662917868786" duration="988000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init with default HTML file.">
       <created>1662873816104</created>
@@ -85,7 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662874372638</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Stubbed out WordCountMap with methods needed according to docs.">
+      <created>1662876235580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662876235580</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added sorting for wordCount, stubbed display.">
+      <created>1662886017839</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662886017839</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +153,8 @@
     <MESSAGE value="Project Init with default HTML file." />
     <MESSAGE value="Added basic README.md with assignment description." />
     <MESSAGE value="Moved README to correct location." />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved README to correct location." />
+    <MESSAGE value="Stubbed out WordCountMap with methods needed according to docs." />
+    <MESSAGE value="Added sorting for wordCount, stubbed display." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sorting for wordCount, stubbed display." />
   </component>
 </project>
