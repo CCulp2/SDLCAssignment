@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Project Init with default HTML file." />
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Added basic README.md with assignment description." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +54,7 @@
       <workItem from="1662589729376" duration="17000" />
       <workItem from="1662655686213" duration="761000" />
       <workItem from="1662784332066" duration="2132000" />
-      <workItem from="1662870970982" duration="2420000" />
+      <workItem from="1662870970982" duration="2758000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init with default HTML file.">
       <created>1662873816104</created>
@@ -63,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662873816104</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added basic README.md with assignment description.">
+      <created>1662874063830</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662874063830</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +89,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Init with default HTML file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Init with default HTML file." />
+    <MESSAGE value="Added basic README.md with assignment description." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic README.md with assignment description." />
   </component>
 </project>
