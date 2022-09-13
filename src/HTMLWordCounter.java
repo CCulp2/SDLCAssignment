@@ -26,6 +26,6 @@ public class HTMLWordCounter {
         arrayOfWords = text.getText();
         wordCountMap.addListOfWords(arrayOfWords);
         wordCountMap.displayTop20();
-//        wordCountMap.displayTopX(1000);
+//        wordCountMap.displayTopX(100);
     }
 }

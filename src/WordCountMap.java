@@ -30,8 +30,10 @@ public class WordCountMap {
 //    public displayTop20: Display the top 20 words counted in descending order
     public void displayTop20() {
         LinkedHashMap<String, Integer> sorted = sortWordCountMap(wordCount, sortedWordCount);
+        System.out.println(String.format("%-10s |%3s", "Word", "Count"));
+        System.out.println("-----------------");
         sorted.entrySet().stream().limit(20).forEach(w -> {
-            System.out.println(String.format("%-10s :%3s", w.getKey(), w.getValue()));
+            System.out.println(String.format("%-10s |%5s", w.getKey(), w.getValue()));
         });
     }
 
@@ -39,7 +41,7 @@ public class WordCountMap {
     public void displayTopX(int numberToDisplay) {
         LinkedHashMap<String, Integer> sorted = sortWordCountMap(wordCount, sortedWordCount);
         sorted.entrySet().stream().limit(numberToDisplay).forEach(w -> {
-            System.out.println(String.format("%-15s :%2s", w.getKey(), w.getValue()));
+            System.out.println(String.format("%-10s |%3s", w.getKey(), w.getValue()));
         });
 
     }
