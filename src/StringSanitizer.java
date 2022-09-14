@@ -11,5 +11,4 @@ public class StringSanitizer {
         sanitizedLine = sanitizedLine.replaceAll("[^A-Za-z0-9\\s]", "");
         return sanitizedLine;
     }
-
 }
