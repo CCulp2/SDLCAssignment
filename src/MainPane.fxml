@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="1000.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="358.0" prefWidth="100.0" text="The Raven" />
+                  <Button mnemonicParsing="false" prefHeight="330.0" prefWidth="100.0" text="Text File" />
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="605.0" prefWidth="169.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView prefHeight="608.0" prefWidth="169.0">
+                    <columns>
+                      <TableColumn editable="false" prefWidth="92.0" sortable="false" text="Word" />
+                      <TableColumn editable="false" prefWidth="76.0" sortType="DESCENDING" text="Occurances" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

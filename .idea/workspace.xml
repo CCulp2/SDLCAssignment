@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Finalized last changes.">
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Added JavaFX 19 SDK">
+      <change afterPath="$PROJECT_DIR$/src/FXMLLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_19.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,15 +47,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Chris/Documents/ValenciaCollege/CEN3024 - Software Development 1/SD1/javafx-sdk-19",
+    "last_opened_file_path": "C:/Users/Chris/Documents/ValenciaCollege/CEN3024 - Software Development 1/SD1/javafx-sdk-19/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.language"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -63,6 +69,7 @@
     <configuration name="HTMLWordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HTMLWordCounter" />
       <module name="CCulpSDLCAssignment" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;..\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,7 +99,7 @@
       <workItem from="1663110102796" duration="4780000" />
       <workItem from="1663542728607" duration="126000" />
       <workItem from="1664812848258" duration="87000" />
-      <workItem from="1665163433972" duration="1276000" />
+      <workItem from="1665163433972" duration="8616000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init with default HTML file.">
       <created>1662873816104</created>
@@ -171,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663116038582</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added JavaFX 19 SDK">
+      <created>1665166288150</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665166288150</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +246,8 @@
     <MESSAGE value="Changed sanitizer to soft ignore punctuation, and mdash." />
     <MESSAGE value="Cleaned up print statement" />
     <MESSAGE value="Finalized last changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalized last changes." />
+    <MESSAGE value="Added JavaFX 19 SDK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added JavaFX 19 SDK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -253,5 +268,9 @@
         <watch expression="wordCount" language="JAVA" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
