@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Added JavaFX 19 SDK">
-      <change afterPath="$PROJECT_DIR$/src/FXMLLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_19.xml" afterDir="false" />
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Added main pane.">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fxmlLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mainPaneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCulpSDLCAssignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CCulpSDLCAssignment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXMLLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +56,26 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/Chris/Documents/ValenciaCollege/CEN3024 - Software Development 1/SD1/javafx-sdk-19/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.language"
+    "settings.editor.selected.configurable": "preferences.pathVariables"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment\src" />
+      <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment\views" />
       <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="HTMLWordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HTMLWordCounter" />
       <module name="CCulpSDLCAssignment" />
@@ -74,8 +84,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="CCulpSDLCAssignment" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml,javafx.web" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.HTMLWordCounter" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.HTMLWordCounter" />
       </list>
     </recent_temporary>
@@ -99,7 +122,10 @@
       <workItem from="1663110102796" duration="4780000" />
       <workItem from="1663542728607" duration="126000" />
       <workItem from="1664812848258" duration="87000" />
-      <workItem from="1665163433972" duration="8616000" />
+      <workItem from="1665163433972" duration="15819000" />
+      <workItem from="1665241935953" duration="6597000" />
+      <workItem from="1665257603683" duration="65000" />
+      <workItem from="1665257678731" duration="10097000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init with default HTML file.">
       <created>1662873816104</created>
@@ -185,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665166288150</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added main pane.">
+      <created>1665183526267</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665183526267</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +280,8 @@
     <MESSAGE value="Cleaned up print statement" />
     <MESSAGE value="Finalized last changes." />
     <MESSAGE value="Added JavaFX 19 SDK" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JavaFX 19 SDK" />
+    <MESSAGE value="Added main pane." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added main pane." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
