@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Added main pane.">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fxmlLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainPaneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Working WebView for Raven portion.">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_19_javadoc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CountTable.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CountTableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WordCount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCulpSDLCAssignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CCulpSDLCAssignment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FXMLLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HTMLWordCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTMLWordCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordCountMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordCountMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxmlLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPaneController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,15 +57,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/Chris/Documents/ValenciaCollege/CEN3024 - Software Development 1/SD1/javafx-sdk-19/lib",
+    "last_opened_file_path": "C:/Users/Chris/Documents/ValenciaCollege/CEN3024 - Software Development 1/SD1/javafx-sdk-19/src.zip",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pathVariables"
+    "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -125,7 +125,9 @@
       <workItem from="1665163433972" duration="15819000" />
       <workItem from="1665241935953" duration="6597000" />
       <workItem from="1665257603683" duration="65000" />
-      <workItem from="1665257678731" duration="10097000" />
+      <workItem from="1665257678731" duration="26751000" />
+      <workItem from="1665290582693" duration="1441000" />
+      <workItem from="1665292036224" duration="3287000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init with default HTML file.">
       <created>1662873816104</created>
@@ -218,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665183526267</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Working WebView for Raven portion.">
+      <created>1665270148000</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665270148000</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,25 +290,14 @@
     <MESSAGE value="Finalized last changes." />
     <MESSAGE value="Added JavaFX 19 SDK" />
     <MESSAGE value="Added main pane." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added main pane." />
+    <MESSAGE value="Working WebView for Raven portion." />
+    <option name="LAST_COMMIT_MESSAGE" value="Working WebView for Raven portion." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/WordCountMap.java</url>
-          <line>39</line>
-          <properties class="WordCountMap" method="displayTopX">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="wordCount" language="JAVA" />
+        <watch expression="wordCountMap" />
       </configuration>
     </watches-manager>
   </component>

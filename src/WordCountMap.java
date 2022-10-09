@@ -1,3 +1,6 @@
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.util.*;
 
 public class WordCountMap {
@@ -36,6 +39,12 @@ public class WordCountMap {
                 System.out.printf("%-10s |%5s%n", w.getKey(), w.getValue()));
     }
 
+//    Alternatively returns a linkedhashmap of the sorted products.
+    public LinkedHashMap<String, Integer> returnTop20() {
+        LinkedHashMap<String, Integer> sorted = sortWordCountMap(wordCount, sortedWordCount);
+        return sorted;
+    }
+
 //    public displayTopX: Displays number of values asked for
     public void displayTopX(int numberToDisplay) {
         LinkedHashMap<String, Integer> sorted = sortWordCountMap(wordCount, sortedWordCount);
@@ -49,5 +58,13 @@ public class WordCountMap {
         wordCount.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .forEachOrdered(x -> sortedWordCount.put(x.getKey(), x.getValue()));
         return sortedWordCount;
+    }
+
+    public ObservableList<WordCount> getObservableWordCountList(LinkedHashMap<String, Integer> top20) {
+        ObservableList<WordCount> words = FXCollections.observableArrayList();
+        top20.entrySet().stream().limit(20).forEach(w ->
+                words.add(new WordCount(w.getKey(), w.getValue())));
+
+        return words;
     }
 }
