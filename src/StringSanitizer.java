@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class StringSanitizer {
 
     public static String removeHTML(String lineOfFile ) {
@@ -10,5 +12,20 @@ public class StringSanitizer {
         String sanitizedLine = lineOfFile.replaceAll("&mdash;", " ");
         sanitizedLine = sanitizedLine.replaceAll("[^A-Za-z0-9\\s]", "");
         return sanitizedLine;
+    }
+
+    public static ArrayList<String> sanitizeAndArrayList(String s) {
+        String[] sArray;
+        ArrayList<String> sArrayList = new ArrayList<String>();
+
+        s = StringSanitizer.removeHTML(s);
+        s = StringSanitizer.removePunctuation(s);
+        sArray = s.split(" ");
+        for(String word : sArray) {
+            if (!word.isEmpty()) {
+                sArrayList.add(word);
+            }
+        }
+        return sArrayList;
     }
 }

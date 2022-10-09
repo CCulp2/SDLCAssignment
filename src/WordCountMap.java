@@ -67,4 +67,9 @@ public class WordCountMap {
 
         return words;
     }
+
+    public void clearMap() {
+        wordCount.clear();
+        sortedWordCount.clear();
+    }
 }

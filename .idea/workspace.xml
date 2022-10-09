@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Working WebView for Raven portion.">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_19_javadoc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CountTable.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CountTableController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WordCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SharedWordCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TextArea.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WordCountHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCulpSDLCAssignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CCulpSDLCAssignment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HTMLWordCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTMLWordCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CountTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringSanitizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringSanitizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextAreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextAreaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WordCountMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordCountMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxmlLoader.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPaneController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +62,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
@@ -244,7 +242,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="AddGUI" />
                       </list>
                     </value>
                   </entry>

@@ -3,6 +3,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.web.WebView;
@@ -25,59 +26,82 @@ public class mainPaneController implements Initializable{
 
     @FXML
     private void handleRavenButtonAction(ActionEvent event) {
+        if (!isRaven) {
             URL webView = getClass().getResource("/webView.fxml");
             URL ravenUrl = getClass().getResource("1065-h.htm");
-            loadRavenTable();
 
             try {
+                reset();
                 WebView view = FXMLLoader.load(webView);
                 view.getEngine().load(ravenUrl.toString());
                 mainPane.setCenter(view);
                 mainPane.setRight(dataVBox);
+                WordCountHelper wordCountHelper = new WordCountHelper();
+                ObservableList<WordCount> wordCountList = wordCountHelper.ravenMap();
+                loadTable(wordCountList);
+                isRaven = true;
             } catch (Exception e) {
                 System.out.println(e);
                 System.out.println("Boy, sure should make an error pane one of these days!");
             }
-
+        }
     }
 
     @FXML
     private void handleTextButtonAction(ActionEvent event) {
+        isRaven = false;
+        URL textAreaView = getClass().getResource("/TextArea.fxml");
 
-
-    }
-
-    private void loadRavenTable() {
-        if (!isRaven) {
-            String DEFAULT_START_OF_SELECTION = "<h1>";
-            String DEFAULT_END_OF_SELECTION = "</div>";
-            File DEFAULT_FILE_TO_READ = new File("src/1065-h.htm");
-            ArrayList<String> arrayOfWords;
-            WordCountMap wordCountMap = new WordCountMap();
-            LinkedHashMap<String, Integer> sorted;
-            ObservableList<WordCount> wordCountList;
-
-
-            TextSelection text = new TextSelection(DEFAULT_FILE_TO_READ, DEFAULT_START_OF_SELECTION, DEFAULT_END_OF_SELECTION);
-            arrayOfWords = text.getText();
-            wordCountMap.addListOfWords(arrayOfWords);
-            sorted = wordCountMap.returnTop20();
-            wordCountList = wordCountMap.getObservableWordCountList(sorted);
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("CountTable.fxml"));
-
-
-            try {
-                dataVBox.getChildren().add(loader.load());
-                CountTableController controller = loader.getController();
-                controller.initData(wordCountList);
-
-            } catch (Exception e) {
-                System.out.println(e);
-            }
-            isRaven = true;
+        try {
+            reset();
+            mainPane.setRight(dataVBox);
+            isRaven = false;
+            loadTable();
+            TextArea view = FXMLLoader.load(textAreaView);
+            mainPane.setCenter(view);
+        } catch (Exception e) {
+            System.out.println(e);
         }
+
     }
 
+    private void loadTable(ObservableList<WordCount> wordCountList) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("CountTable.fxml"));
+
+
+        try {
+            dataVBox.getChildren().add(loader.load());
+            CountTableController controller = loader.getController();
+            controller.initData(wordCountList);
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+    }
+
+    private CountTableController loadTable() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("CountTable.fxml"));
+        CountTableController controller = null;
+
+
+        try {
+            dataVBox.getChildren().add(loader.load());
+            controller = loader.getController();
+            controller.initData();
+            return controller;
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return controller;
+
+    }
+
+    private void reset() {
+        dataVBox.getChildren().clear();
+        mainPane.setCenter(null);
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
