@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Cleaned up print statement">
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Finished text view, working as intended.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringSanitizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringSanitizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextSelection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordCountMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordCountMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextAreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextAreaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -37,35 +40,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Chris/Documents/ValenciaCollege/CEN3024 - Software Development 1/SD1/javafx-sdk-19/src.zip",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.general"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment\src" />
+      <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment\views" />
       <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="HTMLWordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HTMLWordCounter" />
       <module name="CCulpSDLCAssignment" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;..\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="CCulpSDLCAssignment" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml,javafx.web" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.HTMLWordCounter" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.HTMLWordCounter" />
       </list>
     </recent_temporary>
@@ -86,7 +110,15 @@
       <workItem from="1662917868786" duration="18189000" />
       <workItem from="1663008784674" duration="1113000" />
       <workItem from="1663092710411" duration="783000" />
-      <workItem from="1663110102796" duration="4432000" />
+      <workItem from="1663110102796" duration="4780000" />
+      <workItem from="1663542728607" duration="126000" />
+      <workItem from="1664812848258" duration="87000" />
+      <workItem from="1665163433972" duration="15819000" />
+      <workItem from="1665241935953" duration="6597000" />
+      <workItem from="1665257603683" duration="65000" />
+      <workItem from="1665257678731" duration="26751000" />
+      <workItem from="1665290582693" duration="1441000" />
+      <workItem from="1665292036224" duration="3287000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init with default HTML file.">
       <created>1662873816104</created>
@@ -158,7 +190,49 @@
       <option name="project" value="LOCAL" />
       <updated>1663030063134</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Finalized last changes.">
+      <created>1663116038582</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663116038582</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added JavaFX 19 SDK">
+      <created>1665166288150</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665166288150</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added main pane.">
+      <created>1665183526267</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665183526267</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Working WebView for Raven portion.">
+      <created>1665270148000</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665270148000</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Finished Text Area, debugging table">
+      <created>1665359082257</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665359082257</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Finished text view, working as intended.">
+      <created>1665362032147</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665362032147</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +249,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="AddGUI" />
                       </list>
                     </value>
                   </entry>
@@ -218,26 +292,29 @@
     <MESSAGE value="A couple of methods to help with selecting desired text and refactoring of the WordCountMap." />
     <MESSAGE value="Changed sanitizer to soft ignore punctuation, and mdash." />
     <MESSAGE value="Cleaned up print statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up print statement" />
+    <MESSAGE value="Finalized last changes." />
+    <MESSAGE value="Added JavaFX 19 SDK" />
+    <MESSAGE value="Added main pane." />
+    <MESSAGE value="Working WebView for Raven portion." />
+    <MESSAGE value="Finished Text Area, debugging table" />
+    <MESSAGE value="Finished text view, working as intended." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished text view, working as intended." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/WordCountMap.java</url>
-          <line>39</line>
-          <properties class="WordCountMap" method="displayTopX">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="CountTableController" memberName="wordList" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="wordCount" language="JAVA" />
+        <watch expression="wordCountMap" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

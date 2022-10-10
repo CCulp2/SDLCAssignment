@@ -2,7 +2,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 public class HTMLWordCounter {
-    public static void main(String[] args) {
+    public static void HTMLWordCounter() {
         final String DEFAULT_START_OF_SELECTION = "<h1>";
         final String DEFAULT_END_OF_SELECTION = "</div>";
         final File DEFAULT_FILE_TO_READ = new File("src/1065-h.htm");

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="countTable" prefHeight="600.0" prefWidth="169.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CountTableController">
+   <columns>
+      <TableColumn fx:id="wordCol" editable="false" prefWidth="106.0" sortable="false" text="Word" />
+      <TableColumn fx:id="countCol" editable="false" maxWidth="116.21359480000001" minWidth="0.0" prefWidth="62.0" sortType="DESCENDING" text="Count" />
+   </columns>
+</TableView>
