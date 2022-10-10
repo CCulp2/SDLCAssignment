@@ -20,7 +20,8 @@ public class StringSanitizer {
 
         s = StringSanitizer.removeHTML(s);
         s = StringSanitizer.removePunctuation(s);
-        sArray = s.split(" ");
+        //sArray = s.split(" ");
+        sArray = s.split("\\s+");
         for(String word : sArray) {
             if (!word.isEmpty()) {
                 sArrayList.add(word);

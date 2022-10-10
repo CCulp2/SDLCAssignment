@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Finished Text Area, debugging table">
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Finished text view, working as intended.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CountTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountTableController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TextAreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextAreaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPaneController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665359082257</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Finished text view, working as intended.">
+      <created>1665362032147</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665362032147</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,19 +297,10 @@
     <MESSAGE value="Added main pane." />
     <MESSAGE value="Working WebView for Raven portion." />
     <MESSAGE value="Finished Text Area, debugging table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Text Area, debugging table" />
+    <MESSAGE value="Finished text view, working as intended." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished text view, working as intended." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/TextAreaController.java</url>
-          <line>20</line>
-          <properties field="countTableController" class="TextAreaController" />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="CountTableController" memberName="wordList" />

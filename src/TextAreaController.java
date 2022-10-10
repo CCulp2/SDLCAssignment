@@ -32,12 +32,11 @@ public class TextAreaController implements Initializable {
         textProperty.addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
-                if (t1.endsWith(" ") || t1.endsWith("\n")) {
+//                if (t1.endsWith(" ") || t1.endsWith("\n")) {
                     ObservableList<WordCount> wordList = helper.textAreaMap(t1);
                     sharedWordCount.setWordCount(wordList);
-                    System.out.println(t1);
                     countTableController.refreshList();
-                }
+//                }
             }
         });
     }
