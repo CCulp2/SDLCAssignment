@@ -3,7 +3,7 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
+
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
 
@@ -17,8 +17,12 @@ public class TextAreaController implements Initializable {
 
     private StringProperty textProperty;
     private WordCountHelper helper;
-    private SharedWordCount sharedWordCount = SharedWordCount.getInstance();
+    private final SharedWordCount sharedWordCount = SharedWordCount.getInstance();
     private CountTableController countTableController;
+
+    public void setTableController(CountTableController countTableController) {
+        this.countTableController = countTableController;
+    }
 
 
     @Override
@@ -32,6 +36,7 @@ public class TextAreaController implements Initializable {
                     ObservableList<WordCount> wordList = helper.textAreaMap(t1);
                     sharedWordCount.setWordCount(wordList);
                     System.out.println(t1);
+                    countTableController.refreshList();
                 }
             }
         });

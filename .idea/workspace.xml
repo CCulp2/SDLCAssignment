@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Working WebView for Raven portion.">
-      <change afterPath="$PROJECT_DIR$/src/SharedWordCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TextArea.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WordCountHelper.java" afterDir="false" />
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Finished Text Area, debugging table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CountTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountTableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringSanitizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringSanitizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TextAreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextAreaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordCountMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordCountMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainPaneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPaneController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665270148000</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Finished Text Area, debugging table">
+      <created>1665359082257</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665359082257</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,9 +291,25 @@
     <MESSAGE value="Added JavaFX 19 SDK" />
     <MESSAGE value="Added main pane." />
     <MESSAGE value="Working WebView for Raven portion." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working WebView for Raven portion." />
+    <MESSAGE value="Finished Text Area, debugging table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Text Area, debugging table" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/TextAreaController.java</url>
+          <line>20</line>
+          <properties field="countTableController" class="TextAreaController" />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="CountTableController" memberName="wordList" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="wordCount" language="JAVA" />

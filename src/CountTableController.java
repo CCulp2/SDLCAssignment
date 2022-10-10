@@ -1,4 +1,3 @@
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -20,7 +19,7 @@ public class CountTableController implements Initializable {
 
     @FXML
     private TableColumn<WordCount, String> wordCol;
-    private SharedWordCount sharedWordCount = SharedWordCount.getInstance();
+    private final SharedWordCount sharedWordCount = SharedWordCount.getInstance();
 
     ObservableList<WordCount> wordList = FXCollections.observableArrayList();
 
@@ -31,9 +30,12 @@ public class CountTableController implements Initializable {
 
     public void initData() {
         countTable.setItems(FXCollections.observableArrayList(sharedWordCount.getWordCount()));
-
     }
 
+    public void refreshList() {
+        countTable.setItems(sharedWordCount.getWordCount());
+        countTable.refresh();
+    }
 
 
 
@@ -41,5 +43,6 @@ public class CountTableController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         wordCol.setCellValueFactory(new PropertyValueFactory<WordCount, String>("word"));
         countCol.setCellValueFactory(new PropertyValueFactory<WordCount, Integer>("count"));
+        countTable.setItems(wordList);
     }
 }

@@ -9,10 +9,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.web.WebView;
 
 
-import java.io.File;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.ResourceBundle;
 
 public class mainPaneController implements Initializable{
@@ -50,14 +47,17 @@ public class mainPaneController implements Initializable{
     @FXML
     private void handleTextButtonAction(ActionEvent event) {
         isRaven = false;
-        URL textAreaView = getClass().getResource("/TextArea.fxml");
+        URL textAreaViewURL = getClass().getResource("/TextArea.fxml");
 
         try {
             reset();
             mainPane.setRight(dataVBox);
             isRaven = false;
-            loadTable();
-            TextArea view = FXMLLoader.load(textAreaView);
+            CountTableController tableController = loadTable();
+            FXMLLoader loader = new FXMLLoader(textAreaViewURL);
+            TextArea view = loader.load();
+            TextAreaController textAreaController = loader.getController();
+            textAreaController.setTableController(tableController);
             mainPane.setCenter(view);
         } catch (Exception e) {
             System.out.println(e);
@@ -81,11 +81,12 @@ public class mainPaneController implements Initializable{
     }
 
     private CountTableController loadTable() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("CountTable.fxml"));
+        URL countTableUrl = getClass().getResource("CountTable.fxml");
         CountTableController controller = null;
 
 
         try {
+            FXMLLoader loader = new FXMLLoader(countTableUrl);
             dataVBox.getChildren().add(loader.load());
             controller = loader.getController();
             controller.initData();
