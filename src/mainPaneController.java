@@ -21,6 +21,10 @@ public class mainPaneController implements Initializable{
 
     private Boolean isRaven = false;
 
+    /**
+     * Button event to switch to Web View and automatically load The Raven.htm
+     * @param event
+     */
     @FXML
     private void handleRavenButtonAction(ActionEvent event) {
         if (!isRaven) {
