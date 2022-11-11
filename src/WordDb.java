@@ -1,13 +1,42 @@
-import javax.sql.DataSource;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 
 public class WordDb {
-    Connection conn = DBConnection.getConn();
-    ArrayList<WordCount> wordCountList = new ArrayList<>();
+    Connection conn;
+    int instance;
 
-    public void addWord(String wordToAdd, int instance) {
+    public WordDb() {
+        this.conn = DBConnection.getConn();
+        instance = getInstance();
+    }
+
+    public void addListOfWords(ArrayList<String> listOfWords) {
+        int instance = getInstance();
+        for (String word : listOfWords) {
+            addWord(word, instance);
+        }
+    }
+
+    public ObservableList<WordCount> getTop20Observable() {
+        ObservableList wordList = FXCollections.observableArrayList();
+        String top20Words = "SELECT word, count FROM counts WHERE instance = ? ORDER BY count DESC LIMIT 20";
+        try {
+            PreparedStatement getTop20 = conn.prepareStatement(top20Words);
+            getTop20.setInt(1, instance);
+            ResultSet rs = getTop20.executeQuery();
+            while (rs.next()) {
+                WordCount wordCount = new WordCount(rs.getString(1), rs.getInt(2));
+                wordList.add(wordCount);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return wordList;
+    }
+    private void addWord(String wordToAdd, int instance) {
         String word = wordToAdd.toLowerCase();
         String findIfWordExists = "SELECT * FROM counts WHERE instance = ? AND word = ?";
         try {
@@ -38,14 +67,14 @@ public class WordDb {
         }
     }
 
-    private int findInstance() {
+    private int getInstance() {
         int instance = 0;
         String findInstanceSql = "SELECT MAX(instance) FROM counts";
         try {
             PreparedStatement findInstanceStatement = conn.prepareStatement(findInstanceSql);
             ResultSet rs = findInstanceStatement.executeQuery();
             if (rs.next()) {
-                instance = rs.getInt(2);
+                instance = rs.getInt(1) + 1;
             } else {
                 instance = 1;
             }

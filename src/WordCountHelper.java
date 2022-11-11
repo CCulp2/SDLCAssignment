@@ -7,10 +7,12 @@ import java.util.LinkedHashMap;
 public class WordCountHelper {
 
     private WordCountMap wordCountMap;
+    private WordDb wordDb;
 
 
     public WordCountHelper() {
         wordCountMap = new WordCountMap();
+        wordDb = new WordDb();
     }
 
     public ObservableList<WordCount> ravenMap() {
@@ -25,12 +27,13 @@ public class WordCountHelper {
 
         TextSelection text = new TextSelection(DEFAULT_FILE_TO_READ, DEFAULT_START_OF_SELECTION, DEFAULT_END_OF_SELECTION);
         arrayOfWords = text.getText();
+        wordDb.addListOfWords(arrayOfWords);
+        return wordDb.getTop20Observable();
+//        wordCountMap.addListOfWords(arrayOfWords);
+//        sorted = wordCountMap.returnTop20();
+//        wordCountList = wordCountMap.getObservableWordCountList(sorted);
 
-        wordCountMap.addListOfWords(arrayOfWords);
-        sorted = wordCountMap.returnTop20();
-        wordCountList = wordCountMap.getObservableWordCountList(sorted);
-
-        return wordCountList;
+//        return wordCountList;
     }
 
     public ObservableList<WordCount> textAreaMap(String s) {
