@@ -20,9 +20,9 @@ public class WordCountHelper {
         String DEFAULT_END_OF_SELECTION = "</div>";
         File DEFAULT_FILE_TO_READ = new File("src/1065-h.htm");
         ArrayList<String> arrayOfWords;
-        WordCountMap wordCountMap = new WordCountMap();
-        LinkedHashMap<String, Integer> sorted;
-        ObservableList<WordCount> wordCountList;
+//        WordCountMap wordCountMap = new WordCountMap();
+//        LinkedHashMap<String, Integer> sorted;
+//        ObservableList<WordCount> wordCountList;
 
 
         TextSelection text = new TextSelection(DEFAULT_FILE_TO_READ, DEFAULT_START_OF_SELECTION, DEFAULT_END_OF_SELECTION);

@@ -1,5 +1,6 @@
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -12,12 +13,12 @@ public class WordDb {
         instance = getInstance();
     }
 
-    public void addListOfWords(ArrayList<String> listOfWords) {
-        int instance = getInstance();
-        for (String word : listOfWords) {
-            addWord(word, instance);
-        }
-    }
+//    public void addListOfWords(ArrayList<String> listOfWords) {
+//        int instance = getInstance();
+//        for (String word : listOfWords) {
+//            addWord(word, instance);
+//        }
+//    }
 
     public ObservableList<WordCount> getTop20Observable() {
         ObservableList wordList = FXCollections.observableArrayList();
@@ -36,9 +37,47 @@ public class WordDb {
 
         return wordList;
     }
-    private void addWord(String wordToAdd, int instance) {
-        String word = wordToAdd.toLowerCase();
+
+    public void addListOfWords(ArrayList<String> words) {
+        for (String word : words) {
+            word = word.toLowerCase();
+            if (!wordExists(word)) {
+                addWord(instance, word);
+            }
+        }
+    }
+
+    private void updateWord(int count, int id) {
+        String updateRecord = "UPDATE counts SET count = ? WHERE id = ?";
+        try {
+            PreparedStatement wordExists = conn.prepareStatement(updateRecord);
+            wordExists.setInt(1, count);
+            wordExists.setInt(2, id);
+            wordExists.executeUpdate();
+            wordExists.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void addWord(int instance, String word) {
+        String insertRecord = "INSERT INTO counts (instance, word, count)" +
+                "VALUES(?, ?, ?)";
+        try {
+            PreparedStatement insertStatement = conn.prepareStatement(insertRecord);
+            insertStatement.setInt(1, instance);
+            insertStatement.setString(2, word);
+            insertStatement.setInt(3, 1);
+            insertStatement.execute();
+            insertStatement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private Boolean wordExists(String word) {
         String findIfWordExists = "SELECT * FROM counts WHERE instance = ? AND word = ?";
+        Boolean exists;
         try {
             PreparedStatement wordExists = conn.prepareStatement(findIfWordExists);
             wordExists.setInt(1, instance);
@@ -48,24 +87,20 @@ public class WordDb {
                 int occurrence = rs.getInt(4);
                 int id = rs.getInt(1);
                 occurrence++;
-                String updateRecord = "UPDATE counts SET count = ? WHERE id = ?";
-                PreparedStatement updateStatement = conn.prepareStatement(updateRecord);
-                updateStatement.setInt(1, occurrence);
-                updateStatement.setInt(2, id);
-                updateStatement.executeUpdate();
+                updateWord(occurrence, id);
+                exists = true;
+                wordExists.close();
             } else {
-                String insertRecord = "INSERT INTO counts (instance, word, count)" +
-                        "VALUES(?, ?, ?)";
-                PreparedStatement insertStatement = conn.prepareStatement(insertRecord);
-                insertStatement.setInt(1, instance);
-                insertStatement.setString(2, word);
-                insertStatement.setInt(3, 1);
-                insertStatement.execute();
+                exists = false;
+                wordExists.close();
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            exists = false;
         }
+        return exists;
     }
+
 
     private int getInstance() {
         int instance = 0;
@@ -83,8 +118,6 @@ public class WordDb {
         }
         return instance;
     }
-
-
 
 
 }
