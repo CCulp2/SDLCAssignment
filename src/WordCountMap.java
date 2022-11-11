@@ -1,6 +1,5 @@
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-
 import java.util.*;
 
 /**
@@ -16,6 +15,7 @@ public class WordCountMap {
      * A sorted map of words and their occurrences.
      */
     private final LinkedHashMap<String, Integer> sortedWordCount;
+
 
     public WordCountMap() {
         wordCount = new HashMap<>();

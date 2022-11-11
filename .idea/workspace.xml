@@ -4,70 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Clean up of gitignore for Javadocs.">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_9_2022_8_57_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/CountTableController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/HTMLWordCounter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/SharedWordCount.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/StringSanitizer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/TextAreaController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/TextSelection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/WordCount.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/WordCountHelper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/WordCountMap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/allclasses-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/allpackages-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/element-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/help-doc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/jquery-ui.overrides.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/legal/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/legal/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/legal/jquery.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/legal/jqueryUI.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/mainPaneController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/member-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/module-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/overview-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/package-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/resources/glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/resources/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/images/ui-icons_222222_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/images/ui-icons_454545_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/images/ui-icons_888888_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script-dir/jquery-ui.structure.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/tag-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/type-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/webViewController.html" afterDir="false" />
+    <list default="true" id="b6ff6dd1-2bde-4ff5-992f-c7e71b65aed6" name="Changes" comment="Raven display working.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordCountHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordCountHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordDb.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,42 +44,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Chris/Documents/ValenciaCollege/CEN3024 - Software Development 1/SD1/CCulpSDLCAssignment&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Chris/Downloads/sqlite-jdbc-3.39.4.0.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "SQL Dialects"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;HTML&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "sqlite"
+    ],
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "HTML"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment\Test" />
       <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment\src" />
+      <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment\Test" />
       <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment\views" />
       <recent name="C:\Users\Chris\Documents\ValenciaCollege\CEN3024 - Software Development 1\SD1\CCulpSDLCAssignment" />
     </key>
@@ -149,7 +93,15 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestSuite">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="HTMLWordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HTMLWordCounter" />
+      <module name="CCulpSDLCAssignment" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;..\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="CCulpSDLCAssignment" />
@@ -179,12 +131,15 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.HTMLWordCounter" />
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.TestSuite" />
       <item itemvalue="JUnit.WordCountMapTest.returnTop20" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.HTMLWordCounter" />
         <item itemvalue="JUnit.WordCountMapTest.returnTop20" />
         <item itemvalue="Application.Main" />
       </list>
@@ -228,6 +183,7 @@
       <workItem from="1667611446839" duration="62000" />
       <workItem from="1667611520110" duration="640000" />
       <workItem from="1668010156559" duration="1159000" />
+      <workItem from="1668093277655" duration="24844000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init with default HTML file.">
       <created>1662873816104</created>
@@ -376,7 +332,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668011284531</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add word for database working">
+      <created>1668133146380</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1668133146380</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Raven display working.">
+      <created>1668135800976</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1668135800976</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +363,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Add_Junit_Testing" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -411,12 +381,17 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="master" />
+                  <option value="HEAD" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
                 </option>
               </RecentGroup>
             </list>
@@ -448,7 +423,9 @@
     <MESSAGE value="Finished TextSelectionTest, WordCountMapTest." />
     <MESSAGE value="JavaDoc the rest of the program." />
     <MESSAGE value="Clean up of gitignore for Javadocs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean up of gitignore for Javadocs." />
+    <MESSAGE value="Add word for database working" />
+    <MESSAGE value="Raven display working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Raven display working." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

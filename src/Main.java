@@ -11,6 +11,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        DbLoad.load();
         Parent root = FXMLLoader.load(getClass().getResource("MainPane.fxml"));
         stage.setScene(new Scene(root));
         stage.setTitle("CCulp Word Counter");
