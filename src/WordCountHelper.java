@@ -25,6 +25,7 @@ public class WordCountHelper {
 
         TextSelection text = new TextSelection(DEFAULT_FILE_TO_READ, DEFAULT_START_OF_SELECTION, DEFAULT_END_OF_SELECTION);
         arrayOfWords = text.getText();
+
         wordCountMap.addListOfWords(arrayOfWords);
         sorted = wordCountMap.returnTop20();
         wordCountList = wordCountMap.getObservableWordCountList(sorted);

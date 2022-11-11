@@ -1,6 +1,8 @@
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import javax.swing.plaf.nimbus.State;
+import java.sql.*;
 import java.util.*;
 
 /**
@@ -16,11 +18,14 @@ public class WordCountMap {
      * A sorted map of words and their occurrences.
      */
     private final LinkedHashMap<String, Integer> sortedWordCount;
+    private final WordDb wordDb;
+
 
     public WordCountMap() {
         wordCount = new HashMap<>();
         sortedWordCount = new LinkedHashMap<>();
-    }
+        wordDb = new WordDb();
+            }
 
     /**
      * Calls AddWord on ArrayList of Strings.
